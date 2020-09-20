@@ -1,4 +1,4 @@
-<b>Technical task DTrading</b>
+<b>Technical task DTrading:</b>
 
 <b>Task 1</b> Writing a script to collect data for the onset of web pages: https://epbets.ueex.com.ua/public/PositionList.aspx?id_auc=3294127&view_type=positions&lan=en
 The structure contains separate blocks for each position. You need to collect this data and write them in tables, from 1 row 1 position will correspond, and all data concerning a position wake up in a separate column. That is, you should get a table of the form:
@@ -6,7 +6,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
 
 <b>Task 2</b> Attached are data on electricity consumption and production in Ukraine since 2016. Your task is to visualize the data and express your own assessment of trends. If you wish, you can use additional information resources, but this is not necessary.
 
-<b>Step for Set Up</b>
+<b>Step for Set Up:</b>
 
  1. git clone https://github.com/TimofiiSorokin/DTrading.git
 
@@ -18,7 +18,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
 
  5. pip3 install -r requirements.txt
 
-<b>Step for Task_1</b>
+<b>Step for Task_1:</b>
 
  1. cd Task_1
 
@@ -26,7 +26,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
  
  3. run parser -> python data_collection.py
  
- <b>Step forTask_2</b>
+ <b>Step forTask_2:</b>
  
  1 cd ..
  
@@ -36,7 +36,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
  
  4. python year_2016.py
 
-<b>Result</b>
+<b>Result:</b>
 
 1. We can check the work of the parser in the table Energy. You can drop db and create again from models.py.
 
