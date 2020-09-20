@@ -42,8 +42,8 @@ Position | Type | Condition | Seller Graph type | Trade area ...
 
 2. The difference in electricity production in Ukraine over the last four years can be seen on circular diagrams. 
 
-![Screenshot](myplot_2016.png)
-![Screenshot](myplot_2020.png)
+![Screenshot](Task_2/myplot_2016.png)
+![Screenshot](Task_2/myplot_2020.png)
 
 During this time, electricity generation from renewable sources increased by 5.3%
 
