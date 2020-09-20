@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0093)https://epbets.ueex.com.ua/public/PositionList.aspx?id_auc=3294127&view_type=positions&lan=ua -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="../UEEX_files/jquery-latest.js"></script>
+    <title>UEEX</title>
+
+    <link type="text/css" rel="stylesheet" href="../UEEX_files/Site.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="../UEEX_files/graph.css">
+
+    <link type="text/css" rel="stylesheet" media="screen" href="../UEEX_files/jquery-ui-1.10.4.custom.css">
+
+    <script type="text/javascript" src="../UEEX_files/PublicView_lan.js"></script>
+    <script type="text/javascript" src="../UEEX_files/Trade_lan.js"></script>
+    <script type="text/javascript" src="../UEEX_files/Tools.js"></script>
+    <script type="text/javascript" src="../UEEX_files/DicUpdates.js"></script>
+    <script type="text/javascript" src="../UEEX_files/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="../UEEX_files/PublicView.js"></script>
+    <script type="text/javascript" src="../UEEX_files/Documents.js"></script>
+
+    <script type="text/javascript" src="../UEEX_files/jquery.flot.js"></script>
+    <script type="text/javascript" src="../UEEX_files/jquery.flot.time.js"></script>
+    <script type="text/javascript" src="../UEEX_files/jquery.flot.selection.js"></script>
+    <script type="text/javascript" src="../UEEX_files/Graph.js"></script>
+
+    <link rel="icon" href="https://epbets.ueex.com.ua/Styles/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="https://epbets.ueex.com.ua/Styles/favicon.png" type="image/png">
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+
+<body onload="Initiate();" background="../UEEX_files/bg_body.jpg">
+<div id="Page" class="page">
+    <div class="public_page">
+        <div id="pn_position_title" style="">
+            <h2>ТБ "Українська енергетична біржа" 07.08.2020 року об 19:15 <br> проводить електронний аукціон<br>з
+                продажу електричної енергії за двосторонніми договорами № EP-070820-1915</h2>
+        </div>
+        <div id="pn_result_title" style="display:none">
+            <h2>price_register__</h2>
+            <span>trade_type_title__ № Num__</span>
+            <table width="100%">
+                <tbody>
+                <tr>
+                    <td align="left">place_name__</td>
+                    <td align="right">TradeDate__</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="position_filter" class="filter" style="">
+            <div class="field">
+                <span>№</span> <input type="text" id="fl_FullNumber" class="value">
+            </div>
+            <div class="field">
+                <span lan_id="Direction" class="lan_r">Вид</span> <select id="fl_Direction" class="value">
+                <option value="">---</option>
+                <option value="2401">Продаж</option>
+            </select>
+            </div>
+            <div class="field">
+                <span lan_id="position" class="lan_r">Позиція</span> <select id="fl_Owner" class="value">
+                <option value="">---</option>
+                <option value="2870309">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</option>
+            </select>
+            </div>
+            <div class="field">
+                <span lan_id="public_Goods" class="lan_r">Тип графіку продажу електричної енергії</span> <select
+                    id="fl_Goods" class="value">
+                <option value="">---</option>
+                <option value="972058">Базове навантаження</option>
+                <option value="3201269">Блочна позиція</option>
+            </select>
+            </div>
+            <div class="field">
+                <span lan_id="Transport" class="lan_r">Торгова зона</span> <select id="fl_DeliveryType" class="value">
+                <option value="">---</option>
+                <option value="3001706">ОЕС України</option>
+            </select>
+            </div>
+            <span id="btnFilter" lan_id="btnFilter"
+                  class="lan_r ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                  onclick="onFilter();" role="button" aria-disabled="false"><span
+                    class="ui-button-text">Фільтр</span></span>
+            <span id="btnExcel" lan_id="btDownload" style="display:none"
+                  class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"
+                  aria-disabled="false"><span class="ui-button-text">Завантажити</span></span>
+        </div>
+
+        <div id="pnPrices">
+        </div>
+
+        <div id="pnList">
+            <div id="position3294162" class="position">
+                <div class="columns3">
+                    <div class="field">
+                        <div lan_id="position" class="lan_r label">Позиція</div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Direction" class="lan_r label">Вид</div>
+                        <div class="value">Продаж</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="State" class="lan_r label">Стан</div>
+                        <div class="value">Допущено</div>
+                    </div>
+                </div>
+                <div class="columns1 main_param">
+                    <div class="field">
+                        <div id="l_OwnerName" class="label">Продавець</div>
+                        <div class="value">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                        <div class="value">Базове навантаження</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                        <div class="value">ОЕС України</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії
+                        </div>
+                        <div class="value">12.08.2020 <span>-</span> 30.09.2020</div>
+                    </div>
+
+                    <div class="field">
+                        <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                        <div class="value">200</div>
+                    </div>
+                    <div class="field">
+                        <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div class="label">В лоті, МВт.г</div>
+                        <div class="value"> 1 200</div>
+                    </div>
+                    <div class="field">
+                        <div id="FullSize3294162" class="label">Загальний обсяг, МВт.г</div>
+                        <div class="value"> 240 000</div>
+                    </div>
+
+                    <div class="field">
+                        <div id="Init_Price3294162" class="label">Стартова ціна, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field" id="pn_Pawn_Price3294162" style="display: none;">
+                        <div id="Price3294162" class="label">Ціна застави, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field cost">
+                        <div id="Cost3294162" class="label">Вартість, грн. без ПДВ</div>
+                        <div class="value"> 360 000 000.00</div>
+                    </div>
+
+                    <div id="pnDetail3294162" style="display:none">
+                        <div class="field">
+                            <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                            <div class="value">Відповідно до умов Договору купівлі-продажу електричної енергії.</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                            <div class="value">Підтвердження графіків на платформі ОСП в Д-1 до 10:00 після укладання
+                                двостороннього договору купівлі-продажу електричної енергії. Договір може бути укладено
+                                в електронному вигляді з накладенням КЕП уповноважених осіб за умови наявної технічної
+                                можливості (надання відкритого ключа) та за згодою обох Сторін.
+                            </div>
+                        </div>
+
+                        <div class="field" id="pn_pawn3294162">
+                            <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                            <div class="column2">
+                                <div class="field">
+                                    <div lan_id="Type" class="lan_r label">Тип</div>
+                                    <div class="value">%</div>
+                                </div>
+                                <div class="field">
+                                    <div lan_id="Rate" class="lan_r label">Ставка</div>
+                                    <div class="value"> 10.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field" id="pn_documents3294162">
+                            <div lan_id="Documents" class="lan_r label">Документи</div>
+                            <div class="value">
+                                <div id="pn_document_3294159" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294159">Договір</a>
+                                </div>
+                                <div id="pn_document_3294161" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294161">ДУ
+                                        до договору</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pn_btnDetail3294162" style="padding:10px;">
+                    <span id="btnDetail3294162" lan_id="btnDetail"
+                          class="lan_r label ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                          onclick="ShowDetail(&#39;3294162&#39;);" role="button" aria-disabled="false"><span
+                            class="ui-button-text">Детальніше</span></span>
+                </div>
+            </div>
+            <div id="position3294171" class="position">
+                <div class="columns3">
+                    <div class="field">
+                        <div lan_id="position" class="lan_r label">Позиція</div>
+                        <div class="value">2</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Direction" class="lan_r label">Вид</div>
+                        <div class="value">Продаж</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="State" class="lan_r label">Стан</div>
+                        <div class="value">Допущено</div>
+                    </div>
+                </div>
+                <div class="columns1 main_param">
+                    <div class="field">
+                        <div id="l_OwnerName" class="label">Продавець</div>
+                        <div class="value">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                        <div class="value">Базове навантаження</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                        <div class="value">ОЕС України</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії
+                        </div>
+                        <div class="value">12.08.2020 <span>-</span> 31.08.2020</div>
+                    </div>
+
+                    <div class="field">
+                        <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                        <div class="value">200</div>
+                    </div>
+                    <div class="field">
+                        <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div class="label">В лоті, МВт.г</div>
+                        <div class="value"> 480</div>
+                    </div>
+                    <div class="field">
+                        <div id="FullSize3294171" class="label">Загальний обсяг, МВт.г</div>
+                        <div class="value"> 96 000</div>
+                    </div>
+
+                    <div class="field">
+                        <div id="Init_Price3294171" class="label">Стартова ціна, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field" id="pn_Pawn_Price3294171" style="display: none;">
+                        <div id="Price3294171" class="label">Ціна застави, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field cost">
+                        <div id="Cost3294171" class="label">Вартість, грн. без ПДВ</div>
+                        <div class="value"> 144 000 000.00</div>
+                    </div>
+
+                    <div id="pnDetail3294171" style="display:none">
+                        <div class="field">
+                            <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                            <div class="value">Відповідно до умов Договору купівлі-продажу електричної енергії.</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                            <div class="value">Підтвердження графіків на платформі ОСП в Д-1 до 10:00 після укладання
+                                двостороннього договору купівлі-продажу електричної енергії. Договір може бути укладено
+                                в електронному вигляді з накладенням КЕП уповноважених осіб за умови наявної технічної
+                                можливості (надання відкритого ключа) та за згодою обох Сторін.
+                            </div>
+                        </div>
+
+                        <div class="field" id="pn_pawn3294171">
+                            <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                            <div class="column2">
+                                <div class="field">
+                                    <div lan_id="Type" class="lan_r label">Тип</div>
+                                    <div class="value">%</div>
+                                </div>
+                                <div class="field">
+                                    <div lan_id="Rate" class="lan_r label">Ставка</div>
+                                    <div class="value"> 25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field" id="pn_documents3294171">
+                            <div lan_id="Documents" class="lan_r label">Документи</div>
+                            <div class="value">
+                                <div id="pn_document_3294169" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294169">ДУ
+                                        до договору</a>
+                                </div>
+                                <div id="pn_document_3294170" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294170">Договір</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pn_btnDetail3294171" style="padding:10px;">
+                    <span id="btnDetail3294171" lan_id="btnDetail"
+                          class="lan_r label ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                          onclick="ShowDetail(&#39;3294171&#39;);" role="button" aria-disabled="false"><span
+                            class="ui-button-text">Детальніше</span></span>
+                </div>
+            </div>
+            <div id="position3294181" class="position">
+                <div class="columns3">
+                    <div class="field">
+                        <div lan_id="position" class="lan_r label">Позиція</div>
+                        <div class="value">3</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Direction" class="lan_r label">Вид</div>
+                        <div class="value">Продаж</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="State" class="lan_r label">Стан</div>
+                        <div class="value">Допущено</div>
+                    </div>
+                </div>
+                <div class="columns1 main_param">
+                    <div class="field">
+                        <div id="l_OwnerName" class="label">Продавець</div>
+                        <div class="value">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                        <div class="value">Базове навантаження</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                        <div class="value">ОЕС України</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії
+                        </div>
+                        <div class="value">01.09.2020 <span>-</span> 30.09.2020</div>
+                    </div>
+
+                    <div class="field">
+                        <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                        <div class="value">100</div>
+                    </div>
+                    <div class="field">
+                        <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div class="label">В лоті, МВт.г</div>
+                        <div class="value"> 720</div>
+                    </div>
+                    <div class="field">
+                        <div id="FullSize3294181" class="label">Загальний обсяг, МВт.г</div>
+                        <div class="value"> 72 000</div>
+                    </div>
+
+                    <div class="field">
+                        <div id="Init_Price3294181" class="label">Стартова ціна, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field" id="pn_Pawn_Price3294181" style="display: none;">
+                        <div id="Price3294181" class="label">Ціна застави, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field cost">
+                        <div id="Cost3294181" class="label">Вартість, грн. без ПДВ</div>
+                        <div class="value"> 108 000 000.00</div>
+                    </div>
+
+                    <div id="pnDetail3294181" style="display:none">
+                        <div class="field">
+                            <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                            <div class="value">Відповідно до умов Договору купівлі-продажу електричної енергії.</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                            <div class="value">Підтвердження графіків на платформі ОСП в Д-1 до 10:00 після укладання
+                                двостороннього договору купівлі-продажу електричної енергії. Договір може бути укладено
+                                в електронному вигляді з накладенням КЕП уповноважених осіб за умови наявної технічної
+                                можливості (надання відкритого ключа) та за згодою обох Сторін.
+                            </div>
+                        </div>
+
+                        <div class="field" id="pn_pawn3294181">
+                            <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                            <div class="column2">
+                                <div class="field">
+                                    <div lan_id="Type" class="lan_r label">Тип</div>
+                                    <div class="value">%</div>
+                                </div>
+                                <div class="field">
+                                    <div lan_id="Rate" class="lan_r label">Ставка</div>
+                                    <div class="value"> 25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field" id="pn_documents3294181">
+                            <div lan_id="Documents" class="lan_r label">Документи</div>
+                            <div class="value">
+                                <div id="pn_document_3294179" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294179">Договір</a>
+                                </div>
+                                <div id="pn_document_3294180" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294180">ДУ
+                                        до договору</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pn_btnDetail3294181" style="padding:10px;">
+                    <span id="btnDetail3294181" lan_id="btnDetail"
+                          class="lan_r label ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                          onclick="ShowDetail(&#39;3294181&#39;);" role="button" aria-disabled="false"><span
+                            class="ui-button-text">Детальніше</span></span>
+                </div>
+            </div>
+            <div id="position3294187" class="position">
+                <div class="columns3">
+                    <div class="field">
+                        <div lan_id="position" class="lan_r label">Позиція</div>
+                        <div class="value">4</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Direction" class="lan_r label">Вид</div>
+                        <div class="value">Продаж</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="State" class="lan_r label">Стан</div>
+                        <div class="value">Допущено</div>
+                    </div>
+                </div>
+                <div class="columns1 main_param">
+                    <div class="field">
+                        <div id="l_OwnerName" class="label">Продавець</div>
+                        <div class="value">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                        <div class="value">7-22, всі дні</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                        <div class="value">ОЕС України</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії
+                        </div>
+                        <div class="value">12.08.2020 <span>-</span> 31.08.2020</div>
+                    </div>
+
+                    <div class="field">
+                        <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                        <div class="value">160</div>
+                    </div>
+                    <div class="field">
+                        <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div class="label">В лоті, МВт.г</div>
+                        <div class="value"> 320</div>
+                    </div>
+                    <div class="field">
+                        <div id="FullSize3294187" class="label">Загальний обсяг, МВт.г</div>
+                        <div class="value"> 51 200</div>
+                    </div>
+
+                    <div class="field">
+                        <div id="Init_Price3294187" class="label">Стартова ціна, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field" id="pn_Pawn_Price3294187" style="display: none;">
+                        <div id="Price3294187" class="label">Ціна застави, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field cost">
+                        <div id="Cost3294187" class="label">Вартість, грн. без ПДВ</div>
+                        <div class="value"> 76 800 000.00</div>
+                    </div>
+
+                    <div id="pnDetail3294187" style="display:none">
+                        <div class="field">
+                            <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                            <div class="value">Відповідно до умов Договору купівлі-продажу електричної енергії.</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                            <div class="value">Підтвердження графіків на платформі ОСП в Д-1 до 10:00 після укладання
+                                двостороннього договору купівлі-продажу електричної енергії. Договір може бути укладено
+                                в електронному вигляді з накладенням КЕП уповноважених осіб за умови наявної технічної
+                                можливості (надання відкритого ключа) та за згодою обох Сторін.
+                            </div>
+                        </div>
+
+                        <div class="field" id="pn_pawn3294187">
+                            <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                            <div class="column2">
+                                <div class="field">
+                                    <div lan_id="Type" class="lan_r label">Тип</div>
+                                    <div class="value">%</div>
+                                </div>
+                                <div class="field">
+                                    <div lan_id="Rate" class="lan_r label">Ставка</div>
+                                    <div class="value"> 25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field" id="pn_documents3294187">
+                            <div lan_id="Documents" class="lan_r label">Документи</div>
+                            <div class="value">
+                                <div id="pn_document_3294185" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294185">ДУ
+                                        до договору</a>
+                                </div>
+                                <div id="pn_document_3294186" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294186">Договір</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pn_btnDetail3294187" style="padding:10px;">
+                    <span id="btnDetail3294187" lan_id="btnDetail"
+                          class="lan_r label ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                          onclick="ShowDetail(&#39;3294187&#39;);" role="button" aria-disabled="false"><span
+                            class="ui-button-text">Детальніше</span></span>
+                </div>
+            </div>
+            <div id="position3294236" class="position">
+                <div class="columns3">
+                    <div class="field">
+                        <div lan_id="position" class="lan_r label">Позиція</div>
+                        <div class="value">5</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Direction" class="lan_r label">Вид</div>
+                        <div class="value">Продаж</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="State" class="lan_r label">Стан</div>
+                        <div class="value">Допущено</div>
+                    </div>
+                </div>
+                <div class="columns1 main_param">
+                    <div class="field">
+                        <div id="l_OwnerName" class="label">Продавець</div>
+                        <div class="value">ВП Енергоатом-Трейдинг ДП НАЕК Енергоатом</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                        <div class="value">1-6, 23-24, всі дні</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                        <div class="value">ОЕС України</div>
+                    </div>
+                    <div class="field">
+                        <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії
+                        </div>
+                        <div class="value">12.08.2020 <span>-</span> 31.08.2020</div>
+                    </div>
+
+                    <div class="field">
+                        <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                        <div class="value">160</div>
+                    </div>
+                    <div class="field">
+                        <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                        <div class="value">1</div>
+                    </div>
+                    <div class="field">
+                        <div class="label">В лоті, МВт.г</div>
+                        <div class="value"> 160</div>
+                    </div>
+                    <div class="field">
+                        <div id="FullSize3294236" class="label">Загальний обсяг, МВт.г</div>
+                        <div class="value"> 25 600</div>
+                    </div>
+
+                    <div class="field">
+                        <div id="Init_Price3294236" class="label">Стартова ціна, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field" id="pn_Pawn_Price3294236" style="display: none;">
+                        <div id="Price3294236" class="label">Ціна застави, грн./МВт.г без ПДВ</div>
+                        <div class="value"> 1 500.00</div>
+                    </div>
+                    <div class="field cost">
+                        <div id="Cost3294236" class="label">Вартість, грн. без ПДВ</div>
+                        <div class="value"> 38 400 000.00</div>
+                    </div>
+
+                    <div id="pnDetail3294236" style="display:none">
+                        <div class="field">
+                            <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                            <div class="value">Відповідно до умов Договору купівлі-продажу електричної енергії.</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                            <div class="value">Підтвердження графіків на платформі ОСП в Д-1 до 10:00 після укладання
+                                двостороннього договору купівлі-продажу електричної енергії. Договір може бути укладено
+                                в електронному вигляді з накладенням КЕП уповноважених осіб за умови наявної технічної
+                                можливості (надання відкритого ключа) та за згодою обох Сторін.
+                            </div>
+                        </div>
+
+                        <div class="field" id="pn_pawn3294236">
+                            <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                            <div class="column2">
+                                <div class="field">
+                                    <div lan_id="Type" class="lan_r label">Тип</div>
+                                    <div class="value">%</div>
+                                </div>
+                                <div class="field">
+                                    <div lan_id="Rate" class="lan_r label">Ставка</div>
+                                    <div class="value"> 25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field" id="pn_documents3294236">
+                            <div lan_id="Documents" class="lan_r label">Документи</div>
+                            <div class="value">
+                                <div id="pn_document_3294234" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294234">ДУ
+                                        до договору</a>
+                                </div>
+                                <div id="pn_document_3294235" class="document">
+                                    <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=3294235">Договір</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pn_btnDetail3294236" style="padding:10px;">
+                    <span id="btnDetail3294236" lan_id="btnDetail"
+                          class="lan_r label ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"
+                          onclick="ShowDetail(&#39;3294236&#39;);" role="button" aria-disabled="false"><span
+                            class="ui-button-text">Детальніше</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="pn_position_total" style="margin-bottom: 20px;">
+            <div lan_id="Total" class="lan_r SpanTitle">Всього</div>
+            <div class="columns1">
+                <div class="field">
+                    <div lan_id="volume_rezult" class="lan_r label">Обсяг реалізації</div>
+                    <div class="value"> 484 800</div>
+                </div>
+                <div class="field price_view" id="position_total_cost">
+                    <div class="label">Вартість, грн.</div>
+                    <div class="value"> 727 200 000.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pnParticipants" style="display:none; margin-bottom:20px;">
+            <div onclick="show_partisipants()">
+                <span lan_id="contract_members_link" class="lan_r ">Перелік учасників, допущених до укладення договорів за результатами аукціону</span>
+                № Num__
+            </div>
+
+            <div id="pn_sellers" style="display:none; margin-bottom:20px;">
+                <div class="result_table">
+                    <div class="table_row">
+                        <div class="participant_header column_header" style="text-align:left"><span lan_id="sellers"
+                                                                                                    class="lan_r label">Продавці</span>
+                        </div>
+                    </div>
+                    __participants_s
+                </div>
+            </div>
+
+            <div id="pn_buyers" style="display:none; margin-bottom:20px;">
+                <div class="result_table">
+                    <div class="table_row">
+                        <div class="participant_header column_header" style="text-align:left"><span lan_id="buyers"
+                                                                                                    class="lan_r label">Покупці</span>
+                        </div>
+                    </div>
+                    __participants_b
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-2 col-md-2 columns iso-icons">
+        <img src="../UEEX_files/iso1.png">
+        <img src="../UEEX_files/iso2.png">
+    </div>
+</div>
+
+<div style=" visibility: collapse">
+
+    <div id="pn_participants_row___id" class="table_row">
+        <div class="participant_col1"><span>__participantN</span></div>
+        <div class="participant_col2"><span>__participant_text</span></div>
+    </div>
+
+    <div id="result_table___id" class="result_table">
+        __content
+    </div>
+
+    <div id="result_header1___id" class="table_row">
+        <div class="result_col1 column_header"><span lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</span>,<br>
+            <span lan_id="Transport" class="lan_r label">Торгова зона</span>,<br>
+            <span lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії</span>
+        </div>
+        <div class="result_col2 column_header"><span lan_id="volume_rezult" class="lan_r label">Обсяг реалізації</span>
+        </div>
+        <div class="result_col3 column_header cost"><span lan_id="volume_cost"
+                                                          class="lan_r label">Загальна вартість</span></div>
+        <div class="result_col3 column_header"><span lan_id="min" class="lan_r label">Мін.</span> __price</div>
+        <div class="result_col5 column_header"><span lan_id="avg" class="lan_r label">Середньозваж.</span> __price</div>
+        <div class="result_col4 column_header"><span lan_id="max" class="lan_r label">Макс.</span> __price</div>
+    </div>
+    <div id="result_header2___id" class="table_row">
+        <div class="result_col1"></div>
+        <div class="result_col2">__unit</div>
+        <div class="result_col3 cost">__Currency</div>
+        <div class="result_col3">__Currency</div>
+        <div class="result_col5">__Currency</div>
+        <div class="result_col4">__Currency</div>
+    </div>
+
+    <div id="result_row___id" class="table_row">
+        <div class="result_col1">__Goods, __DeliveryType, __LoadDateFrom - __LoadDateTo</div>
+        <div class="result_col2">__FullSize</div>
+        <div class="result_col3 cost">__Cost</div>
+        <div class="result_col3">__MinPrice</div>
+        <div class="result_col5">__AvgPrice</div>
+        <div class="result_col4">__MaxPrice</div>
+    </div>
+
+    <div id="position__id" class="position">
+        <div class="columns3">
+            <div class="field">
+                <div lan_id="position" class="lan_r label">Позиція</div>
+                <div class="value">__Number</div>
+            </div>
+            <div class="field">
+                <div lan_id="Direction" class="lan_r label">Вид</div>
+                <div class="value">__DirectionName</div>
+            </div>
+            <div class="field">
+                <div lan_id="State" class="lan_r label">Стан</div>
+                <div class="value">__StateName</div>
+            </div>
+        </div>
+        <div class="columns1 main_param">
+            <div class="field">
+                <div id="l_OwnerName" class="label">_l_OwnerName</div>
+                <div class="value">__OwnerName</div>
+            </div>
+            <div class="field">
+                <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                <div class="value">__Goods</div>
+            </div>
+            <div class="field">
+                <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                <div class="value">__DeliveryType</div>
+            </div>
+            <div class="field">
+                <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії</div>
+                <div class="value">__LoadDateFrom <span>-</span> __LoadDateTo</div>
+            </div>
+
+            <div class="field">
+                <div lan_id="Lot_quantity" class="lan_r label">Кількість лотів</div>
+                <div class="value">__Amount</div>
+            </div>
+            <div class="field">
+                <div class="label"><span lan_id="lot_ee" class="lan_r">Лот, МВт.</span></div>
+                <div class="value">1</div>
+            </div>
+            <div class="field">
+                <div class="label">_l__LotSize, __unit</div>
+                <div class="value">__LotSize</div>
+            </div>
+            <div class="field">
+                <div id="FullSize__id" class="label">_l__Full_size, __unit</div>
+                <div class="value">__FullSize</div>
+            </div>
+
+            <div class="field">
+                <div id="Init_Price__id" class="label">_l_Initial_price__currency_per_unit __WithVAT</div>
+                <div class="value">__Init_Price</div>
+            </div>
+            <div class="field" id="pn_Pawn_Price__id">
+                <div id="Price__id" class="label">_l_Pawn_Price__currency_per_unit __WithVAT</div>
+                <div class="value">__Price</div>
+            </div>
+            <div class="field cost">
+                <div id="Cost__id" class="label">_l_Cost, __Currency __WithVAT</div>
+                <div class="value">__Cost</div>
+            </div>
+
+            <div id="pnDetail__id" style="display:none">
+                <div class="field">
+                    <div lan_id="PaymentCondition" class="lan_r label">Умови оплати</div>
+                    <div class="value">__PaymentCondition</div>
+                </div>
+                <div class="field">
+                    <div lan_id="Comments" class="lan_r label">Додаткові умови</div>
+                    <div class="value">__Comments</div>
+                </div>
+
+                <div class="field" id="pn_pawn__id">
+                    <div lan_id="Pawn_differs" class="lan_r label">Гарантійний внесок</div>
+                    <div class="column2">
+                        <div class="field">
+                            <div lan_id="Type" class="lan_r label">Тип</div>
+                            <div class="value">__Pawn_typeName</div>
+                        </div>
+                        <div class="field">
+                            <div lan_id="Rate" class="lan_r label">Ставка</div>
+                            <div class="value">__Pawn_size</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field" id="pn_documents__id">
+                    <div lan_id="Documents" class="lan_r label">Документи</div>
+                    <div class="value">
+                        __str_files
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pn_btnDetail__id" style="padding:10px;">
+            <span id="btnDetail__id" lan_id="btnDetail" class="lan_r label" onclick="ShowDetail(&#39;__id&#39;);">Детальніше</span>
+        </div>
+    </div>
+
+    <div id="rezult_position__id" class="position">
+        <div class="columns3">
+            <div class="field">
+                <div lan_id="position" class="lan_r label">Позиція</div>
+                <div class="value">__Number</div>
+            </div>
+            <div class="field">
+                <div lan_id="Direction" class="lan_r label">Вид</div>
+                <div class="value">__DirectionName</div>
+            </div>
+        </div>
+        <div class="columns1 main_param">
+            <div class="field">
+                <div id="l_OwnerName" class="label">_l_OwnerName</div>
+                <div class="value">__OwnerName</div>
+            </div>
+            <div class="field">
+                <div lan_id="public_Goods" class="lan_r label">Тип графіку продажу електричної енергії</div>
+                <div class="value">__Goods</div>
+            </div>
+            <div class="field">
+                <div lan_id="Transport" class="lan_r label">Торгова зона</div>
+                <div class="value">__DeliveryType</div>
+            </div>
+            <div class="field">
+                <div lan_id="public_LoadDate" class="lan_r label">Період відпуску/відбору електричної енергії</div>
+                <div class="value">__LoadDateFrom <span>-</span> __LoadDateTo</div>
+            </div>
+
+            <div class="field">
+                <div class="columns6">
+                    <div class="vertical_field">
+                        <div lan_id="lots" class="lan_r label">Лотів</div>
+                        <div class="value">__ResultAmount</div>
+                    </div>
+                    <div class="vertical_field">
+                        <div class="label"><span lan_id="volume" class="lan_r">Обсяг</span>, __unit</div>
+                        <div class="value">__ResultFullSize</div>
+                    </div>
+                    <div class="vertical_field cost">
+                        <div class="label"><span lan_id="Cost" class="lan_r">Вартість</span>, __WithVAT</div>
+                        <div class="value">__ResultCost</div>
+                    </div>
+                    <div class="vertical_field">
+                        <div class="label"><span lan_id="min" class="lan_r">Мін.</span> __WithVAT</div>
+                        <div class="value">__MinPrice</div>
+                    </div>
+                    <div class="vertical_field">
+                        <div class="label"><span lan_id="max" class="lan_r">Макс.</span> __WithVAT</div>
+                        <div class="value">__MaxPrice</div>
+                    </div>
+                    <div class="vertical_field">
+                        <div class="label"><span lan_id="avg" class="lan_r">Середньозваж.</span> __WithVAT</div>
+                        <div class="value">__AvgPrice</div>
+                    </div>
+                    <div class="vertical_field"><span id="btTradeFlow__id" lan_id="btnDetail" class="lan_r label"
+                                                      onclick="PositionPricesGraph(&#39;__id&#39;);">Детальніше</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result_param">
+        </div>
+    </div>
+
+
+    <div id="pn_document___id" class="document">
+        <a href="https://epbets.ueex.com.ua/public/PublicHandler.ashx?CommandName=Download&amp;id=__id">__Num</a>
+    </div>
+
+    <div id="diagGraphForm" class="title_lan" title="Графік">
+        <div class="demo-container">
+            <div id="GraphPlaceholder" class="demo-placeholder"></div>
+        </div>
+        <div id="graph_tooltip" style="position: absolute; display: none; border: 1px solid #fdd; padding:2px"></div>
+        <div id="graph_comment" style="text-align:center"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
