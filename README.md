@@ -28,7 +28,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
  
  <b>Step forTask_2:</b>
  
- 1 cd ..
+ 1. cd ..
  
  2. cd Task_2
  
