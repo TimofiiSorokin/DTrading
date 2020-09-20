@@ -38,7 +38,7 @@ Position | Type | Condition | Seller Graph type | Trade area ...
 
 <b>Result</b>
 
-1. We can see the SQLite DB with data from parser.
+1. We can check the work of the parser in the table Energy. You can drop db and create again from models.py.
 
 2. The difference in electricity production in Ukraine over the last four years can be seen on circular diagrams. 
 
