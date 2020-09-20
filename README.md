@@ -4,7 +4,12 @@
 The structure contains separate blocks for each position. You need to collect this data and write them in tables, from 1 row 1 position will correspond, and all data concerning a position wake up in a separate column. That is, you should get a table of the form:
 Position | Type | Condition | Seller Graph type | Trade area ...
 
+<<<<<<< HEAD
 <b>Task 2</b> Attached are data on electricity consumption and production in Ukraine since 2016. Your task is to visualize the data and express your own assessment of trends. If you wish, you can use additional information resources, but this is not necessary.
+=======
+![Screenshot](Task_2/myplot_2016.png)
+![Screenshot](myplot_2020.png)
+>>>>>>> 90a3b4ab0296c84cc1f9aacc76b13242355e81ab
 
 <b>Step for Set Up</b>
 
