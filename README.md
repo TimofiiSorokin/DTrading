@@ -2,7 +2,7 @@
 
 It's a test project were you use Django, Postgres for add,edit,delete row in table without Django forms! Only ajax request to DB.
 
-![Screenshot](myplot_2016.png)
+![Screenshot](Task_2/myplot_2016.png)
 ![Screenshot](myplot_2020.png)
 
 <b>Step for Set Up</b>
