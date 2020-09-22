@@ -26,7 +26,9 @@ Position | Type | Condition | Seller Graph type | Trade area ...
  
  3. run parser -> python data_collection.py
  
- <b>Step forTask_2:</b>
+![Screenshot](Task_1/Sc.png)
+ 
+<b>Step forTask_2:</b>
  
  1. cd ..
  
